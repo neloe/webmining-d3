@@ -1,4 +1,4 @@
-
+function chart () {
 const margin = ({top: 30, right: 0, bottom: 30, left: 40})
 const height=500
 const width=800
@@ -39,8 +39,6 @@ const x = d3.scaleBand()
  
 //const data = Object.assign(d3.csvParse(await FileAttachment("alphabet.csv").text(), ({letter, frequency}) => ({name: letter, value: +frequency}))//.sort((a, b) => d3.descending(a.value, b.value)), {format: "%", y: "↑ Frequency"})
 
-
-function chart () {
 
     const svg = d3.select('#mychart').attr('viewBox', [0,0,width, height])
 
